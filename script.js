@@ -19,7 +19,14 @@ async function getPopularShows() {
 
         const data = await response.json();
 
-        console.log(data.results);
+        data.results.forEach(function (show) {
+            const option = document.createElement("option");
+
+            option.value = show.id;
+            option.textContent = show.name;
+
+            showSelect.appendChild(option);
+        });
 
         message.textContent = "Popular shows loaded successfully!";
     } catch (error) {
