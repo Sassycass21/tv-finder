@@ -1,0 +1,109 @@
+
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.hero {
+    background-color: #121212;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    margin-top: 0;
+    color: #f5c518;
+}
+
+.hero p {
+    margin-bottom: 0;
+}
+
+/* Show Selection */
+.picker {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.picker label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.picker select {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Status Message */
+#message {
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Show Details */
+#show-details {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#show-details h2 {
+    color: #222;
+    margin-top: 0;
+}
+
+#show-details img {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#show-details p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    .page {
+        padding: 10px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    #show-details {
+        padding: 15px;
+    }
+
+    #show-details img {
+        max-width: 100%;
+    }
+}
